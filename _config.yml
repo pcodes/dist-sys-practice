@@ -1,24 +1,18 @@
 # Site Settings
-title: Jekflix | A theme for Jekyll
+title: Distributed Systems Practice | A Blog About Learning Dist Sys
 email: youremail@xyz.com
-description: Some text about your blog.
-baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
-url: "https://www.rossener.com" # the base hostname & protocol for your site
+description: A blog about my work learning topics in CSCI 6421, Distributed Systems.
+baseurl: "/dist-sys-practice" # the subpath of your site, e.g. /blog
+url: "http://patcody.io" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jekflix
-user_description: Some text about you.
-disqus_username: disqus_username
+username: pcodes
+user_description: A junior CS student at GWU.
 
 # Social Media
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: pcodes
 
 # Build settings
 markdown: kramdown
