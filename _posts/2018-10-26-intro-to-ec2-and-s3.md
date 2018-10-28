@@ -2,7 +2,7 @@
 layout: post
 title: "Intro to EC2 and S3"
 date: 2018-10-26 19:02:14
-image: '../assets/img/aws.png'
+image: 'http://patcody.io/dist-sys-practice/assets/img/aws.png'
 description: A writeup about an intro to using AWS EC2 and S3
 category: 'webapps'
 tags:
