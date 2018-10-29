@@ -3,12 +3,14 @@ layout: post
 title: "All About Containers"
 date: 2018-10-28 21:04:03
 image: 'http://patcody.io/dist-sys-practice/assets/img/docker.png'
-description:
+description: 'In this post, a deep-dive is taken into how containers work and how they differ from VMs. Practical applications are explored through docker.'
 category: 'containers'
 tags:
 twitter_text:
-introduction:
+introduction: In this post, a deep-dive is taken into how containers work and how they differ from VMs. Practical applications are explored through docker.
 ---
+
+In this post, a deep-dive is taken into how containers work and how they differ from VMs. Practical applications are explored through docker.
 
 ## Video: What is a Container? (20 minutes)
 
@@ -70,3 +72,18 @@ introduction:
   - Alpine only has one layer
   - Custom image has multiple
 - Each layer is immutable
+
+## Video: VMs Vs. Containers Deep Dive (10 minutes)
+
+- Myth that containers are always smaller than VMs- not necessarily true
+  - VMs have application, user-space stuff for OS (things like package mananger, etc), and the kernel
+  - Containers have the application and user-space
+  - If it's a big application with lots of user-space requirements, then a container can be many GBs, comparable to a VM
+- Security
+  - A VM is very secure- incredibly hard to escape not only kernel + EFI, but ALSO x86 it's running on
+  - A container is as secure as the _kernel it is running on_- because it shares the kernel with the host OS, it becomes the weak point in the system
+  - This is difficult, but not as impossible as breaking out of a VM
+- Boot time
+  - VM has 2 parts- 1) System check and 2) startup process
+  - A container only really has one part- starting the process, which takes as long as a VM
+  - As a result, a container has less to do so its faster
