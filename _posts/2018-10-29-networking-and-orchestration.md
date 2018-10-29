@@ -64,3 +64,21 @@ This post explores networking with Docker, and orchestration with Docker Swarm a
   - Can specify replicas of a pod, or more pods
 - Feed this deployment script to the API and the envrionment will execute it
 - If a worker dies, the Kubernetes cluster service will pick a new worker to execute the pod in
+
+## Kubernetes on My Own (30 Minutes)
+
+- Followes tutorial with Minikube, software designed for creating small clusters
+- `kubectl` is the command-line interface for controlling kubernetes
+- Kubernetes Deployment Controller monitors and self-heals if a node goes down
+- `kubectl run` allows for running of an app- this creates a pod
+- Pods 
+  - A pod is one or more application contianers that all share storage, networking (one IP address), and info on how to run each container
+  - Pods run on Nodes
+  - Pods have internal cluster IPs, as well as an external Node IP
+- Nodes
+  - A node is a "worker" in a kubernetes cluster, and it may be either a VM or a physical server
+  - Each node runs Kubelet and has a container runtime (like Docker)
+  - `kubectl expose` allows for exposing ports on a node
+- Kubernetes allows for rolling updates- meaning each pod is updated one at a time so that there is 0 downtime
+
+## Exercise: Orchestration of Docker on EC2
