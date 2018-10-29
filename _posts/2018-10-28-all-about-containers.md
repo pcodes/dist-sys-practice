@@ -4,7 +4,7 @@ title: "All About Containers"
 date: 2018-10-28 21:04:03
 image: 'http://patcody.io/dist-sys-practice/assets/img/docker.png'
 description:
-category: ''
+category: 'containers'
 tags:
 twitter_text:
 introduction:
@@ -40,7 +40,7 @@ introduction:
   - The OS has whatever drivers it needs to interact with hardware
 - There is room to combine the two: have a hypervisor to interact with hardware, a VM to provide emulated hardware, and a container to manage application dependencies
 
-## Lab: Intro to Docker
+## Lab: Intro to Docker (40 minutes)
 
 - `docker container ls --all` lists all downloaded containers
   - A container hostname is the ID displayed in this command
@@ -58,6 +58,15 @@ introduction:
 - Adding a `--tag` also allows for creating new versions (e.g. linux tweet app)
 - After making changes to an image, these changes can be pushed as new images to Docker Hub
 
-## Lab: Doing More with Docker Images
+## Lab: Doing More with Docker Images (30 minutes)
 
-- 
+- `docker container diff` allows for viewing changes to a container
+- `docker image commit` saves changes made to an image (e.g. when installing new packages)
+- Created a dockerfile that installs Node and then runs a JS file
+  - `COPY` allows files to be copied from a local directory to somewhere in the container
+  - `WORKDIR` is the container startup folder
+- In the changed version of the image, some layers in the container didn't have to be downloaded, we already had them in cache
+- `docker image inspect` allows viewing of the different layers
+  - Alpine only has one layer
+  - Custom image has multiple
+- Each layer is immutable
