@@ -1,6 +1,6 @@
 # Site Settings
 title: Distributed Systems Practice | A Blog About Learning Dist Sys
-email: youremail@xyz.com
+email: pat_cody@gwu.edu
 description: A blog about my work learning topics in CSCI 6421, Distributed Systems.
 baseurl: "/dist-sys-practice" # the subpath of your site, e.g. /blog
 url: "http://patcody.io" # the base hostname & protocol for your site
@@ -30,8 +30,6 @@ links:
     url: /
   - title: About
     url: /about/
-  - title: Contact
-    url: /contact/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
