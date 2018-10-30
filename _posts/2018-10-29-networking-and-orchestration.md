@@ -81,4 +81,10 @@ This post explores networking with Docker, and orchestration with Docker Swarm a
   - `kubectl expose` allows for exposing ports on a node
 - Kubernetes allows for rolling updates- meaning each pod is updated one at a time so that there is 0 downtime
 
-## Exercise: Orchestration of Docker on EC2
+## Exercise: Orchestration of Docker on EC2 (90 Minutes)
+
+- Created EC2 instance, then created image with docker
+- Created additional EC2 instances with that image
+- Installed Kubernetes on seperate EC2 host
+- Set up kubelet service on each host
+- Connected service to main Kubernetes process on the Kubernetes host
